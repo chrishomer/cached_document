@@ -1,0 +1,3 @@
+module CachedDocument
+  # Your code goes here...
+end
