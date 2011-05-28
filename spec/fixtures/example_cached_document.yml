@@ -1,0 +1,21 @@
+
+defaults: &default_settings
+  something: "Foo"
+  attributes:
+    - all
+
+example:
+  <<: *default_settings
+  cache_store:
+    type: "memcache"
+    host: "localhost"
+    port: "11211"
+  cache_key:
+    - firstname
+    - lastname
+  attributes:
+    - firstname
+    - lastname
+    - address
+
+

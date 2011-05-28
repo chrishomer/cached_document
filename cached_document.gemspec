@@ -6,11 +6,17 @@ Gem::Specification.new do |s|
   s.name        = "cached_document"
   s.version     = CachedDocument::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.authors     = ["Chris Homer"]
+  s.email       = ["chris@thredup.com"]
+  s.homepage    = "http://github.com/chrishomer/cached_document"
+  s.summary     = %q{Cached Document is used to flatten out a complex active record object and it's associations, creating an easily cachable document set.}
+  s.description = %q{Cached Document is used to flatten out a complex active record object and it's associations, creating an easily cachable document set.}
+
+  s.add_dependency("activemodel")
+  s.add_dependency("memcache-client")
+
+  s.add_development_dependency("ZenTest")
+  s.add_development_dependency("rspec")
 
   s.rubyforge_project = "cached_document"
 
